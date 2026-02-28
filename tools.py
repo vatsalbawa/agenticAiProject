@@ -6,7 +6,13 @@ def calculate(expression: str):
 
 
 def search(query: str):
-    # Simulated search result
-    if "india gdp growth" in query.lower():
+    
+    query_lower = query.lower()
+
+    if "gdp" in query_lower and "india" in query_lower:
         return "India GDP growth in 2024 is approximately 7 percent."
+
+    if "current year" in query_lower:
+        return "The current year is 2024."
+
     return "No relevant results found."
